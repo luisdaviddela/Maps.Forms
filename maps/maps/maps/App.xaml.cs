@@ -8,7 +8,7 @@ namespace maps
 {
     public partial class App : Application
     {
-        //AIzaSyBWI942MSHzE_RoTg6SnrQEOPv3kzeS-hY
+     
         public App()
         {
             InitializeComponent();
