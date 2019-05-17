@@ -12,6 +12,6 @@
   <ItemGroup>
     <PackageReference Include="Plugin.Permissions" Version="3.0.0.12" />
     <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
-    <PackageReference Include="Xamarin.Forms.Maps" Version="2.3.0.49" />
+    <PackageReference Include="Xamarin.Forms.Maps" Version="2.4.0.18342" />
   </ItemGroup>
 </Project>

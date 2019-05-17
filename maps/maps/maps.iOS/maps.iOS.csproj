@@ -90,6 +90,8 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AreaMapRender.cs" />
+    <Compile Include="CustomMKAnnotationView.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <None Include="Entitlements.plist" />
@@ -153,7 +155,7 @@
     </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
     <PackageReference Include="Xamarin.Forms.Maps">
-      <Version>2.3.0.49</Version>
+      <Version>2.4.0.18342</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
@@ -162,5 +164,8 @@
       <Project>{F8306887-2D1A-4E50-93B0-5014CF878F41}</Project>
       <Name>maps</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\search.png" />
   </ItemGroup>
 </Project>

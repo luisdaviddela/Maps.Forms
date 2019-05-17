@@ -23,6 +23,7 @@ namespace maps
 
                 }
             };
+            //MainPage = new MapPageCS();
         }
 
         protected override void OnStart()
