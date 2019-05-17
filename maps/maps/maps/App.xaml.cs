@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Plugin.Permissions.Abstractions;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -7,16 +8,25 @@ namespace maps
 {
     public partial class App : Application
     {
+        //AIzaSyBWI942MSHzE_RoTg6SnrQEOPv3kzeS-hY
         public App()
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new TabbedPage()
+            {
+                Children =
+                {
+                    new MapsPage(),
+                    new PinsPage(),
+                    new MapsApi()
+
+                }
+            };
         }
 
         protected override void OnStart()
         {
-            // Handle when your app starts
         }
 
         protected override void OnSleep()
