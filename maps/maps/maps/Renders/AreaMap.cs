@@ -18,4 +18,11 @@ namespace maps
     {
         public string Url { get; set; }
     }
+    public class MyMap : Map
+    {
+
+        public MyMap(MapSpan region) : base(region)
+        {
+        }
+    }
 }

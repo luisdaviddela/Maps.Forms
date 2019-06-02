@@ -21,7 +21,7 @@ namespace maps
             };
 
             map.MoveToRegion(MapSpan.FromCenterAndRadius(
-                new Position(36.9628066, -122.0194722), Distance.FromMiles(3)));
+                new Position(36.9628066, -122.0194722), Distance.FromMiles(7)));
             var position = new Position(36.9628066, -122.0194722);
             var pin = new Pin
             {

@@ -121,9 +121,9 @@ namespace maps.iOS
             if (annotationView == null)
             {
                 annotationView = new CustomMKAnnotationView(annotation, customPin.Id.ToString());
-                annotationView.Image = UIImage.FromFile("search.png");
+                annotationView.Image = UIImage.FromFile("pin.png");
                 annotationView.CalloutOffset = new CGPoint(0, 0);
-                annotationView.LeftCalloutAccessoryView = new UIImageView(UIImage.FromFile("search.png"));
+                annotationView.LeftCalloutAccessoryView = new UIImageView(UIImage.FromFile("pin.png"));
                 annotationView.RightCalloutAccessoryView = UIButton.FromType(UIButtonType.DetailDisclosure);
                 ((CustomMKAnnotationView)annotationView).Id = customPin.Id.ToString();
                 ((CustomMKAnnotationView)annotationView).Url = customPin.Url;
@@ -151,7 +151,7 @@ namespace maps.iOS
             {
                 customPinView.Frame = new CGRect(0, 0, 200, 84);
                 var image = new UIImageView(new CGRect(0, 0, 200, 84));
-                image.Image = UIImage.FromFile("search.png");
+                image.Image = UIImage.FromFile("pin.png");
                 customPinView.AddSubview(image);
                 customPinView.Center = new CGPoint(0, -(e.View.Frame.Height + 75));
                 e.View.AddSubview(customPinView);

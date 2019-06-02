@@ -34,7 +34,7 @@ namespace maps
             customMap.ShapeCoordinates.Add(new Position(37.798582, -122.401071));
             customMap.ShapeCoordinates.Add(new Position(37.797658, -122.400888));
 
-            customMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(37.79752, -122.40183), Distance.FromMiles(0.1)));
+            customMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(22.558768, -100.2515286), Distance.FromKilometers(1000)));
 
             Content = customMap;
         }

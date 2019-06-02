@@ -13,17 +13,18 @@ namespace maps
         {
             InitializeComponent();
 
-            MainPage = new TabbedPage()
-            {
-                Children =
-                {
-                    new MapsPage(),
-                    new PinsPage(),
-                    new MapsApi()
+            //MainPage = new TabbedPage()
+            //{
+            //    Children =
+            //    {
+            //        new MapsPage(),
+            //        new PinsPage(),
+            //        new MapsApi()
 
-                }
-            };
+            //    }
+            //};
             //MainPage = new MapPageCS();
+            MainPage = new MapPage();
         }
 
         protected override void OnStart()
